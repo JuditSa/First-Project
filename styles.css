@@ -28,3 +28,64 @@
     border-radius: 4px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#dogs-section{
+    background-color: #85BF4B;
+}
+#cats-section{
+    background-color: #B7D996;
+}
+#other-section{
+    background-color: rgb(216, 216, 186);
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+}
+section h1{
+color: azure;}
+.animal-card {
+  background-color: transparent;
+  width: 490px;
+  height: 330px;
+  border: 1px solid #F1F1F1;
+  perspective: 1000px;
+  flex-direction: row;
+  margin: 10px;
+}
+.animal-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.animal-card:hover .animal-card-inner {
+  transform: rotateY(180deg);
+}
+.animal-card-front, .animal-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.animal-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.animal-card-back {
+  background-color: #5f9211;
+  color: white;
+  transform: rotateY(180deg);
+}
