@@ -26,19 +26,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">     
           
-          <li class="nav-item">            
-            <a class="nav-link active" href="index.html" aria-current="page" >Home</a>
-          </li>
+            <li class="nav-item">            
+                <a class="nav-link active" href="index.html" aria-current="page" >Home</a>
+              </li>
             <li class="nav-item">            
                 <a class="nav-link active" href="page3.html" aria-current="page" href="#">About Us</a>
               </li>              
               <li class="nav-item">            
                 <a class="nav-link active" aria-current="page" href="page4.html">Volunteer</a>
               </li>
-            <li class="nav-item">            
+              <li class="nav-item">            
                 <a class="nav-link active" aria-current="page" href="https://www.google.hu/maps/place/Rex+Kutyaotthon+Alap%C3%ADtv%C3%A1ny/@47.58831,19.1006336,17z/data=!3m1!4b1!4m6!3m5!1s0x4741da6d70c12fa7:0x86c404e84b47541e!8m2!3d47.5883064!4d19.1032085!16s%2Fg%2F1trppknn?entry=ttu">
                   Contact</a>
-              </li>             
+              </li>           
         </ul> 
 
      <style>
@@ -154,60 +154,23 @@ button {
                 }
                 </script>
   </nav>   
-      <p class="text-end" style="font-size:7vw;">Find your best friend, <br> Rescue a pet</p>   
-
-      <style>     
-          p {color: aliceblue;
-          font: bold;
-          }
-      </style>
-  <nav>
-    
-    <div class = "popup" id = "popup">
-      <h2>Are You Old Enough to Donate?</h2>
-       Enter your age: <input id="age">
-       <button onclick="check()">Check</button>
-      </div>
-      
-   <button type="button" class="btn btn-secondary btn-normal" style="font-size:3vw;" class = "btn" onclick="openPopup()">Donate now</button>
-      
-    <script>        
-        function openPopup(){
-        let popup = document.getElementById("popup");
-        popup.classList.add("open-popup");
-        }
-        function check(){
-        let age;
-        age = Number(document.getElementById("age").value);
-        if(age < 18)
-        {
-        alert("You need to be over 18 to donate");
-        popup.classList.remove("open-popup"); 
-        }
-        else
-        {
-          alert("Our Bank Account number is xxxxxxxx-xxxxxxxx-xxxxxxxx");   
-          popup.classList.remove("open-popup");   
-       }
-       }
-    </script>
-
-
-
-   <a href="page2.html">
-
-   <button type="button" class="btn btn-secondary btn-normal" style="font-size:3vw;">Adopt a pet</button>
-   </a> 
-</nav>
-
-  <style>
-    body {
-      background-image: url('Golden.jpg');
-      background-repeat: no-repeat;
-      background-attachment: cover;
-      background-size: cover;
+  
+<section>
+    <h2>About us</h2>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci pariatur quia aut quis officiis enim totam dolores error cumque? Nisi inventore natus assumenda dolore perspiciatis atque voluptas maxime? Odit, repudiandae.
+    </h5>
+    <img src="Team.jpg" alt="" class="center">
+    <Style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
-  </style>
+    </Style>
+</section>
+
+
 
 </body>
 
